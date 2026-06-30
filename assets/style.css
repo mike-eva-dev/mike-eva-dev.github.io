@@ -32,7 +32,13 @@ body {
     padding: 40px 60px;
     position: relative;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 25px 15px;
+        border-radius: 12px;
+    }
 }
 
 .navbar {
@@ -236,6 +242,14 @@ body {
     border-radius: 50%;
     overflow: hidden;
     background-color: #333;
+    max-width: 100%;
+}
+
+@media (max-width: 900px) {
+    .image-circle {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .image-circle img {
@@ -271,6 +285,12 @@ body {
     .navbar {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
     }
 
     .hero-text .description {
@@ -485,11 +505,48 @@ body {
 
 .config-header {
     background-color: #161b22;
-    padding: 12px 200px 12px 20px;
+    padding: 12px 20px;
     display: flex;
     align-items: center;
     border-bottom: 1px solid var(--border-color);
     position: relative;
+}
+
+.config-form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+@media (max-width: 600px) {
+    .code-line {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 6px !important;
+    }
+    
+    .code-line.indent {
+        padding-left: 12px;
+    }
+
+    .config-input, .config-textarea {
+        width: 100% !important;
+        background-color: rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(255, 255, 255, 0.05) !important;
+        border-radius: 4px;
+        padding: 8px 6px !important;
+        font-size: 0.9rem !important;
+    }
+    
+    .config-textarea {
+        min-height: 120px;
+    }
+    
+    .terminal-btn {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 .terminal-buttons {
@@ -571,7 +628,7 @@ body {
 }
 
 .config-input::placeholder, .config-textarea::placeholder {
-    color: #8b949e; /* Grigio commento */
+    color: #8b949e;
     font-style: italic;
 }
 
