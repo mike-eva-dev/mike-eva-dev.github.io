@@ -711,3 +711,7 @@ body {
         opacity: 0;
     }
 }
+
+.config-form .punk {
+    color: #e6edf3;
+}
