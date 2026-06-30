@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike's Portfolio - Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="navbar">
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#">Projects</a>
+                <a href="#" class="active">Contact</a>
+                <a href="skills.html">Skill Levels</a>
+            </nav>
+            <button class="btn-top">Hire Me/></button>
+        </header>
+
+        <main class="contact-section">
+            <div class="contact-intro">
+                <h2>Get in <span class="highlight">Touch</span></h2>
+                <p class="description">Establish a secure connection. Drop a message by editing the configuration file below.</p>
+            </div>
+
+            <div class="config-box">
+                <div class="config-header">
+                    <div class="terminal-buttons">
+                        <span class="dot-term red"></span>
+                        <span class="dot-term yellow"></span>
+                        <span class="dot-term green"></span>
+                    </div>
+                    <span class="config-title"><i class="fa-solid fa-file-code"></i> contact_config.yaml</span>
+                </div>
+                
+                <form class="config-form" action="https://formspree.io/f/xqevddoa" method="POST">
+                    <div class="code-line">
+                        <span class="key">contact_request</span>:
+                    </div>
+                    
+                    <div class="code-line indent">
+                        <span class="key">sender_name</span>: 
+                        <input type="text" name="name" class="config-input" placeholder='"Your Name"' required autocomplete="off">
+                    </div>
+                    
+                    <div class="code-line indent">
+                        <span class="key">sender_email</span>: 
+                        <input type="email" name="email" class="config-input" placeholder='"your@email.com"' required autocomplete="off">
+                    </div>
+                    
+                    <div class="code-line indent">
+                        <span class="key">subject</span>: 
+                        <input type="text" name="subject" class="config-input" placeholder='"Project Inquiry / Hiring"' required autocomplete="off">
+                    </div>
+                    
+                    <div class="code-line indent top-align">
+                        <span class="key">message</span>: 
+                        <textarea name="message" class="config-textarea" placeholder='"Type your message here..."' required></textarea>
+                    </div>
+
+                    <div class="code-line indent">
+                        <span class="key">connection_secure</span>: <span class="boolean">true</span>
+                    </div>
+                    
+                    <div class="code-line indent privacy-note">
+                        <span class="key">data_processing</span>: <span class="string">"Managed securely via Formspree (GDPR compliant)"</span>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="terminal-btn">
+                            <span class="prompt">mike@portfolio:~$</span> sudo send_message --force
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
