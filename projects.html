@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike's Portfolio - Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="navbar">
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#" class="active">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="skills.html">Skill Levels</a>
+            </nav>
+            <a href="contact.html"><button class="btn-top">Hire Me/></button></a>
+        </header>
+
+        <main class="projects-section">
+            <div class="projects-intro">
+                <h2>Open Source <span class="highlight">Repositories</span></h2>
+                <p class="description">A curated selection of my back-end architectures, local AI tools, and network services.</p>
+            </div>
+
+            <div id="projects-grid">
+                
+                <!-- 1. TERMIBRAIN -->
+                <a href="project-termibrain.html" class="project-card">
+                    <h3>🔮 TermiBrain</h3>
+                    <p class="project-desc">Your local AI study assistant. Implements a RAG pipeline utilizing ChromaDB for document vectorization and Ollama/Gemini for offline inference.</p>
+                    <p class="project-comment">// Dual-interface: styled Rich CLI & multi-column FastAPI web dashboard.</p>
+                    <div class="go-corner"><div class="go-arrow">→</div></div>
+                </a>
+
+                <!-- 2. NETGUARD IDS -->
+                <a href="project-netguard.html" class="project-card">
+                    <h3>🛡️ NetGuard-IDS</h3>
+                    <p class="project-desc">A real-time Network Intrusion Detection System. Monitors live network traffic using heuristic analysis to pinpoint potential malicious threats.</p>
+                    <p class="project-comment">// Pushes logs to MySQL backend for view via a custom Java dashboard.</p>
+                    <div class="go-corner"><div class="go-arrow">→</div></div>
+                </a>
+
+                <!-- 3. ASYNCTALK-JAVA -->
+                <a href="project-asynctalk.html" class="project-card">
+                    <h3>💬 AsyncTalk-Java</h3>
+                    <p class="project-desc">A high-performance TCP/IP chat infrastructure built from scratch. Demonstrates advanced multi-threading, socket concurrency, and data broadcasting.</p>
+                    <p class="project-comment">// Custom application-level protocol parsing for high throughput.</p>
+                    <div class="go-corner"><div class="go-arrow">→</div></div>
+                </a>
+
+                <!-- 4. ADVANCED TIC-TAC-TOE -->
+                <a href="project-tictactoe.html" class="project-card">
+                    <h3>❌ advanced-tictactoe</h3>
+                    <p class="project-desc">An optimized command-line implementation of Tic-Tac-Toe featuring an unbeatable AI opponent driven by mathematical logic.</p>
+                    <p class="project-comment">// Utilizes the Minimax decision tree algorithm to evaluate game states.</p>
+                    <div class="go-corner"><div class="go-arrow">→</div></div>
+                </a>
+
+            </div>
+            
+            <div class="bottom-badge">
+                <i class="fa-solid fa-code-branch"></i> v1.0.0
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
