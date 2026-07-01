@@ -832,3 +832,121 @@ body {
     margin-top: 16px;
     transition: color 0.3s ease-out;
 }
+
+.wip-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    width: 100%;
+}
+
+.wip-card {
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 15px;
+    padding: 45px 30px;
+    max-width: 550px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.wip-icon-wrapper {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.wip-icon-wrapper .entry-icon {
+    font-size: 3.5rem;
+    color: #30363d;
+}
+
+.wip-icon-wrapper .gear-icon {
+    font-size: 1.8rem;
+    color: #2ea44f;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    animation: spin-wrench 3s linear infinite;
+}
+
+.wip-title {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.8rem;
+    color: #e6edf3;
+    margin: 0;
+}
+
+.wip-title .mint-text {
+    color: #2ea44f;
+    position: relative;
+}
+
+.wip-desc {
+    color: #8b949e;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.wip-comment {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.85rem;
+    color: #58a6ff;
+    margin: 0;
+}
+
+.wip-progress-box {
+    width: 80%;
+    height: 8px;
+    background-color: #161b22;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+    overflow: hidden;
+    position: relative;
+}
+
+.wip-progress-bar {
+    height: 100%;
+    width: 65%;
+    background: linear-gradient(90deg, #2ea44f, #00ecc6);
+    border-radius: 10px;
+    position: relative;
+    animation: pulse-progress 2s ease-in-out infinite;
+}
+
+.wip-back-btn {
+    margin-top: 15px;
+    font-family: 'Fira Code', monospace;
+    text-decoration: none;
+    color: #e6edf3;
+    border: 1px solid #30363d;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    background-color: #161b22;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wip-back-btn:hover {
+    border-color: #2ea44f;
+    color: #2ea44f;
+    background-color: rgba(46, 164, 79, 0.05);
+    transform: translateY(-2px);
+}
+
+@keyframes pulse-progress {
+    0%, 100% { opacity: 0.8; width: 60%; }
+    50% { opacity: 1; width: 70%; }
+}
